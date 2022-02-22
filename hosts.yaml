@@ -1,0 +1,32 @@
+---
+
+R1:
+    username: "imad"
+    password: "secret" 
+    hostname: "192.168.42.11"
+    groups:
+          - cisco_group
+R2:
+    username: "imad"
+    password: "secret" 
+    hostname: "192.168.42.12"
+    groups:
+          - cisco_group
+
+R3:
+    username: "imad"
+    password: "secret" 
+    hostname: "192.168.42.13"
+    groups:
+          - cisco_group
+
+R4:
+    username: "imad"
+    password: "secret" 
+    hostname: "192.168.42.14"
+    groups:
+          - cisco_group
+
+
+
+
