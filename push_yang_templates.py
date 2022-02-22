@@ -41,14 +41,14 @@ def configure_line(task):
     configuration = template_to_load.result
     task.run(task=netconf_edit_config, target="candidate", config=configuration)
 
-def config_lock(task):
-    task.run(task=netconf_lock, target="candidate", name="Locking candidate Configuration")
+#def config_lock(task):
+#    task.run(task=netconf_lock, target="candidate", name="Locking candidate Configuration")
 
 def config_commit(task):
     task.run(task=netconf_commit, name="Committing candidate Configuration")
 
-def config_unlock(task):
-    task.run(task=netconf_unlock, target="candidate", name="Unlocking candidate Configuration")
+#def config_unlock(task):
+#    task.run(task=netconf_unlock, target="candidate", name="Unlocking candidate Configuration")
     
 
 def main():
@@ -63,7 +63,6 @@ def main():
     var = nr.run(task=load_vars)
     print_result(var)
     
-
     config = nr.run(task=configure_router)
     print_result(config)
 
